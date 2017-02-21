@@ -1,0 +1,78 @@
+<meta>标签
+Safari浏览器私有 Meta 属性
+	<!-- 强制显示方式 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<!-- 允许全屏模式浏览 -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<!-- 定义safari顶端状态条的样式 -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<!-- 开启WEB APP 支持 -->
+	<meta name="apple-touch-fullscreen" content="yes">
+	<!-- WEB APP名称 -->
+	<meta name="apple-mobile-web-app-title" content="APP名">
+	<!-- 隐藏顶部 -->
+	<meta name="viewport" content="minimal-ui">
+
+
+
+UC浏览器
+	1.设置屏幕横屏还是竖屏
+
+　　　　<meta name="screen-orientation" content="portrait | landscape">
+
+　　2.设置是否全屏，yes是强制全屏　　
+
+　　　　<meta name="full-screen" content="yes | no">
+
+　　3.缩放不出滚动条
+
+　　　　no,缩放与标准浏览器缩放一致
+
+　　　　yes,缩放到图片和文字时，不出现横向滚动
+
+　　　　<meta name="viewport" content="uc-fitscreen = "no | yes"">
+
+　　4.排版
+
+　　　　fitscreen,简化页面处理，省流量阅读
+
+　　　　standard,与标准版一致
+
+　　　　设置排版后，用户使用的浏览器模式选项将失效
+
+　　　　<meta name="layoutmode" content="fitscreen | standard">
+
+　　5.夜间模式
+
+　　　　disable,用户就算设置了浏览器的夜间模式，还是显示为非夜间
+
+　　　　<meta name="nightmode" content="anable | disable">
+
+　　6.强制图片显示
+
+　　　　uc浏览器为节省流量，有无图模式，但有的图片是必须要显示的，比如验证码，要强制显示设置imagemode，不影响子页面
+
+　　　　通过meta设置图片加载模式回影响整个页面，故使用这个对单个页面进行设置<img src="" show="force">
+
+　　　　<meta name="imagemode" content="force">
+
+　　7.应用模式
+
+　　　　使用application这种应用模式后，页面回默认全屏，禁止长按菜单，禁止收拾，标准排版，以及强制图片显示
+
+　　　　<meta name="broswermode" content="application">
+	
+	
+QQ浏览器x5内核制定标签
+
+　　　　1.屏幕横屏还是竖屏
+
+　　　　　　<meta name="x5-orientation" content="portrait | lanscape">
+
+　　　　2.是否全屏
+
+　　　　　　<meta name="x5-fullscreen" content="true">
+
+　　　　3.设置屏幕模式
+
+　　　　　　<meta name="x5-page-mode" content="app">
