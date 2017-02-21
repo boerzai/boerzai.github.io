@@ -1,0 +1,3 @@
+css设置img长按不能调出选择菜单
+	-webkit-user-select:none; 
+	-webkit-touch-callout:none;
